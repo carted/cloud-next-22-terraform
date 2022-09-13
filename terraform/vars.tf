@@ -1,3 +1,18 @@
+variable "gcp" {
+  type = object(
+    {
+      project_id = string
+      location   = string
+      region     = strings
+    }
+  )
+  default = {
+    project_id = "my-gcp-project"
+    location   = "us-central1-a"
+    region     = "us-central1"
+  }
+}
+
 variable "notebook" {
   type = object(
     {
@@ -18,23 +33,6 @@ variable "notebook" {
     install_gpu_driver = true
   }
 }
-
-
-variable "gcp" {
-  type = object(
-    {
-      project_id = string
-      location   = string
-      region     = string
-    }
-  )
-  default = {
-    project_id = "my-gcp-project"
-    location   = "us-central1-a"
-    region     = "us-central1"
-  }
-}
-
 
 variable "gcs" {
   type = object(
