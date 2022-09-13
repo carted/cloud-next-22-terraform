@@ -3,7 +3,7 @@ variable "gcp" {
     {
       project_id = string
       location   = string
-      region     = strings
+      region     = string
     }
   )
   default = {
