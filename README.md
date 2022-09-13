@@ -46,6 +46,13 @@ You should get:
 Destroy complete! Resources: 2 destroyed.
 ```
 
+## Verficiation
+
+* Python virtual environment
+* Serial port output (CPU utilization)
+
+TBA
+
 ## Slides
 
 TBA
