@@ -3,12 +3,12 @@ locals {
 }
 
 data "google_compute_network" "vm_network" {
-  project = var.gce.project_id
+  project = var.gcp.project_id
   name    = var.network_name
 }
 
 data "google_compute_subnetwork" "vm_subnetwork" {
-  project = var.gce.project_id
+  project = var.gcp.project_id
   name    = var.subnet_name
   region  = var.subnet_region
 }
@@ -33,9 +33,9 @@ resource "google_notebooks_instance" "notebook_instance" {
     core_count = var.notebook.gpu_count
   }
 
-  install_gpu_driver = var.install_gpu_driver
-  boot_disk_size_gb  = var.boot_disk_size
-  data_disk_size_gb  = var.data_disk_size
+  install_gpu_driver = var.notebook.install_gpu_driver
+  boot_disk_size_gb  = var.notebook.boot_disk_size
+  data_disk_size_gb  = var.notebook.data_disk_size
 
   metadata = { "startup-script" : file("startup.sh") }
 }

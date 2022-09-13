@@ -7,7 +7,7 @@ variable "gcp" {
     }
   )
   default = {
-    project_id = "my-gcp-project"
+    project_id = "gcp-project"
     location   = "us-central1-a"
     region     = "us-central1"
   }
@@ -22,6 +22,8 @@ variable "notebook" {
       gpu_count          = number
       image_family       = string
       install_gpu_driver = bool
+      boot_disk_size     = number
+      data_disk_size     = number
     }
   )
   default = {
@@ -31,6 +33,8 @@ variable "notebook" {
     gpu_count          = 1
     image_family       = "common-cu113"
     install_gpu_driver = true
+    boot_disk_size     = 200
+    data_disk_size     = 500
   }
 }
 
@@ -43,8 +47,26 @@ variable "gcs" {
     }
   )
   default = {
-    name          = "my-ml-bucket"
-    location      = "us-central1-a"
+    name          = "ml-bucket-terraform"
+    location      = "us-central1"
     force_destroy = false
   }
+}
+
+variable "network_name" {
+  description = "The network name for the Notebook instance"
+  type        = string
+  default     = "default"
+}
+
+variable "subnet_name" {
+  description = "The subnet name for the Notebook instance"
+  type        = string
+  default     = "default"
+}
+
+variable "subnet_region" {
+  description = "The region for the Notebook subnet"
+  type        = string
+  default     = "us-central1"
 }
