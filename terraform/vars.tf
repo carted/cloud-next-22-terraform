@@ -43,7 +43,7 @@ variable "gcs" {
     }
   )
   default = {
-    project_id    = "my-ml-bucket"
+    name          = "my-ml-bucket"
     location      = "us-central1-a"
     force_destroy = false
   }
