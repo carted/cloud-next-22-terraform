@@ -20,7 +20,7 @@ In this session, we’ll go over the pain points of provisioning hardware, espec
 Ensure you have Terraform [installed](https://learn.hashicorp.com/tutorials/terraform/install-cli). You'd also need to [configure GCP-related
 authentication](https://cloud.google.com/docs/authentication) on your system.
 
-Refer to the `terraform` directory. Refer to the `vars.tf` file to change your GCP project name, GCS bucket name etc.
+Refer to the `terraform` directory. Refer to the `vars.tf` file within it to change your GCP project name, GCS bucket name etc.
 From there, first run `terraform init`. Then
 
 ```bash
@@ -48,10 +48,26 @@ Destroy complete! Resources: 2 destroyed.
 
 ## Verification
 
-* Python virtual environment
-* Serial port output (CPU utilization)
+After the notebook instance is provisioned (which you should be able to see on the [console](https://console.cloud.google.com/vertex-ai/workbench/list/instances)), we can open its terminal and verify the following things quickly:
 
-TBA
+
+### Python virtual environment
+
+```bash
+$ conda env list
+```
+
+It should enlist `py38`. 
+
+
+### Serial port output (CPU utilization)
+
+```bash
+$ gcloud compute instances get-serial-port-output $NOTEBOOK_INSTANCE_NAME
+```
+
+It will output a bunch of stuff but you should be able to notice logging related
+to CPU utilization as defined in the `terraform/startup.sh` script.
 
 ## Slides
 
