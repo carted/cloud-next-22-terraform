@@ -1,5 +1,5 @@
 # cloud-next-22-terraform
-Contains code and slides for our talk at Cloud Next 2022: **Better Hardware Provisioning for ML Experiments on GCP**.
+Contains code and slides for our talk at Cloud Next 2022: [**Better Hardware Provisioning for ML Experiments on GCP**](https://inthecloud.withgoogle.com/bengaluru-innovators-hive-next-22-13oct/register.html).
 
 Machine Learning (ML) needs extensive experimentation. Modern cloud service platforms such as GCP provide feature-rich GUIs that enable ML practitioners to quickly spin up hardware instances with everything set up – Python libraries, system-level packages, CUDA drivers, etc. A typical workflow here involves a few clicks on a GUI where you’d configure your instance, and you’re set! The entire process is quite fast, enabling you to get started quicker.  
 
