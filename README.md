@@ -18,7 +18,7 @@ In this session, we’ll go over the pain points of provisioning hardware, espec
 ## Code
 
 Ensure you have Terraform [installed](https://learn.hashicorp.com/tutorials/terraform/install-cli). You'd also need to [configure GCP-related
-authentication](https://cloud.google.com/docs/authentication) on your system.
+authentication](https://cloud.google.com/docs/authentication) on your system. It's also recommended to follow along with the blog post that accompanies this repository. 
 
 Refer to the `terraform` directory. Refer to the `vars.tf` file within it to change your GCP project name, GCS bucket name etc.
 From there, first run `terraform init`. Then
@@ -72,6 +72,10 @@ to CPU utilization as defined in the `terraform/startup.sh` script.
 ## Slides
 
 TBA
+
+## Blog post
+
+We've also released a blog post detailing our approach for provisioning hardware for ML experiments. Find it [here] (TBA). 
 
 ## Acknowledgements
 
