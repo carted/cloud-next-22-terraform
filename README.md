@@ -71,7 +71,7 @@ to CPU utilization as defined in the `terraform/startup.sh` script.
 
 ## Slides
 
-TBA
+Find the presentation deck [here](https://github.com/carted/cloud-next-22-terraform/blob/main/slides/Cloud%20Next%202022%20-%20Sayak.pdf).
 
 ## Blog post
 
