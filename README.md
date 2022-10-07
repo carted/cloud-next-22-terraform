@@ -75,7 +75,7 @@ Find the presentation deck [here](https://github.com/carted/cloud-next-22-terraf
 
 ## Blog post
 
-We've also released a blog post detailing our approach for provisioning hardware for ML experiments. Find it [here] (TBA). 
+We've also released a blog post detailing our approach for provisioning hardware for ML experiments. Find it [here](https://www.carted.com/blog/better-hardware-provisioning-for-ml-experiments). 
 
 ## Acknowledgements
 
