@@ -69,6 +69,10 @@ $ gcloud compute instances get-serial-port-output $NOTEBOOK_INSTANCE_NAME
 It will output a bunch of stuff but you should be able to notice logging related
 to CPU utilization as defined in the `terraform/startup.sh` script.
 
+## Demo
+
+A demo rundown is available [here](https://youtu.be/BQY1kOAjXLE).
+
 ## Slides
 
 Find the presentation deck [here](https://github.com/carted/cloud-next-22-terraform/blob/main/slides/Cloud%20Next%202022%20-%20Sayak.pdf).
