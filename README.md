@@ -20,7 +20,7 @@ In this session, we’ll go over the pain points of provisioning hardware, espec
 Ensure you have Terraform [installed](https://learn.hashicorp.com/tutorials/terraform/install-cli). You'd also need to [configure GCP-related
 authentication](https://cloud.google.com/docs/authentication) on your system. It's also recommended to follow along with the blog post that accompanies this repository. 
 
-Refer to the `terraform` directory. Refer to the `vars.tf` file within it to change your GCP project name, GCS bucket name etc.
+Refer to the `terraform` directory. Refer to the `vars.tf` file within it to change your GCP project name, GCS bucket name, etc.
 From there, first run `terraform init`. Then
 
 ```bash
